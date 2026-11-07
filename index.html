@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Diandra Anggari, Computer Science Student and Aspiring Front-End Developer">
+  <title>Diandra Anggari | Personal Portfolio</title>
+
+  <!-- FontAwesome CDN placeholder: Font Awesome 6.5.2 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheet -->
+  <!-- Devicon: logo teknologi resmi (v2.16.0) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Main JavaScript File -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+  <!-- Accessible Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================= -->
+  <!--                      HEADER & NAVBAR                      -->
+  <!-- ========================================================= -->
+  <header class="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <!-- Animated Brand Logo -->
+      <a href="#home" class="logo" id="logo-animation" aria-label="Diandra Anggari Home">
+        <span class="logo__short">DA</span>
+        <span class="logo__full">diandra anggari</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav__list" id="nav-menu">
+        <li class="nav__item">
+          <a href="#home" class="nav__link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#projects" class="nav__link">Projects</a>
+        </li>
+        <li class="nav__item">
+          <a href="#experience" class="nav__link">Experience</a>
+        </li>
+        <li class="nav__item">
+          <a href="#techstack" class="nav__link">Stack</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Controls: Theme Toggle & Mobile Hamburger -->
+      <div class="nav__controls">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+
+        <button type="button" class="hamburger" id="hamburger-menu" aria-label="Toggle navigation menu"
+          aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- ===================== END HEADER ====================== -->
+
+  <!-- ========================================================= -->
+  <!--                       MAIN CONTENT                        -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!--                       HERO SECTION                      -->
+    <!-- ======================================================= -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <!-- Camar melayang: dekoratif saja -->
+      <div class="hero__birds" aria-hidden="true">
+        <div class="bird bird--1"><svg viewBox="0 0 64 28" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <path d="M2 18 C10 6 22 4 32 14 C42 4 54 6 62 18 C54 12 42 12 32 22 C22 12 10 12 2 18 Z" />
+          </svg></div>
+        <div class="bird bird--2"><svg viewBox="0 0 64 28" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <path d="M2 18 C10 6 22 4 32 14 C42 4 54 6 62 18 C54 12 42 12 32 22 C22 12 10 12 2 18 Z" />
+          </svg></div>
+        <div class="bird bird--3"><svg viewBox="0 0 64 28" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <path d="M2 18 C10 6 22 4 32 14 C42 4 54 6 62 18 C54 12 42 12 32 22 C22 12 10 12 2 18 Z" />
+          </svg></div>
+        <div class="bird bird--4"><svg viewBox="0 0 64 28" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <path d="M2 18 C10 6 22 4 32 14 C42 4 54 6 62 18 C54 12 42 12 32 22 C22 12 10 12 2 18 Z" />
+          </svg></div>
+        <div class="bird bird--5"><svg viewBox="0 0 64 28" xmlns="http://www.w3.org/2000/svg" focusable="false">
+            <path d="M2 18 C10 6 22 4 32 14 C42 4 54 6 62 18 C54 12 42 12 32 22 C22 12 10 12 2 18 Z" />
+          </svg></div>
+      </div>
+
+      <div class="hero__container">
+        <!-- Left Column: Content -->
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">Hi, I'm Diandra</h1>
+          <p class="hero__subtitle">Aspiring Front-End Developer &amp; UI/UX Designer</p>
+          <p class="hero__description">
+            Exploring the intersection of design and technology to create intuitive and meaningful digital experiences.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn-primary hero__btn" aria-label="View My Work in Projects section">View My
+              Work</a>
+            <a href="assets/documents/resume.pdf" class="btn btn-secondary hero__btn" download
+              aria-label="Download Diandra Anggari's CV">Download CV</a>
+          </div>
+
+          <div class="hero__socials" aria-label="Social media profiles">
+            <a href="https://www.linkedin.com/in/diandra-anggari" class="hero__social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/diandranggari" class="hero__social-link" target="_blank"
+              rel="noopener noreferrer" aria-label="GitHub Profile">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:hi.diandraanggari@gmail.com" class="hero__social-link" aria-label="Send an email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual with Floating Cards -->
+        <div class="hero__visual">
+          <figure class="hero__image-wrapper">
+            <img src="assets/images/profile.jpg" alt="Diandra Anggari portrait" class="hero__image">
+          </figure>
+
+          <!-- Floating Card 1: Core Tech (Top-Left) -->
+          <div class="hero__card hero__card--tech" aria-label="Core Technical Skills">
+            <h4 class="hero__card-title">Core Tech</h4>
+            <ul class="hero__card-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Python</li>
+              <li>Figma</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+
+          <!-- Floating Card 2: Soft Skills (Bottom-Right) -->
+          <div class="hero__card hero__card--soft" aria-label="Soft Skills">
+            <h4 class="hero__card-title">Soft Skills</h4>
+            <ul class="hero__card-list">
+              <li>Teamwork</li>
+              <li>Problem Solving</li>
+              <li>Attention to Detail</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END HERO ======================== -->
+
+    <!-- ======================================================= -->
+    <!--                      ABOUT SECTION                      -->
+    <!-- ======================================================= -->
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about__container">
+        <div class="about-bento">
+          <!-- Main Card -->
+          <article class="about-bento__main">
+            <span class="about-bento__name-small">DIANDRA SRI SAKANTI ARGYANTI ANGGARI</span>
+            <h2 class="about-bento__title" id="about-title">About Me</h2>
+            <div class="about-bento__tags">
+              <span class="about-tag">Computer Science Student</span>
+              <span class="about-tag">Digital Technopreneurship Specialization Track</span>
+            </div>
+            <p class="about-bento__bio">
+              A Computer Science student at BINUS University specializing in Digital Technopreneurship, with interests
+              in user experience design, data analytics, and digital innovation. Passionate about understanding user
+              needs, exploring business opportunities, and turning ideas into practical digital solutions. Experienced
+              in academic projects, prototyping, and analytical problem-solving, with a strong interest in creating
+              user-centered solutions that deliver meaningful value.
+            </p>
+            <div class="about-bento__skills">
+              <div class="about-bento__skills-col">
+                <h4 class="about-bento__skills-heading">Core Skills</h4>
+                <ul class="about-bento__skills-list" aria-label="Core Skills">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Python</li>
+                  <li>Figma</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+              <div class="about-bento__skills-col">
+                <h4 class="about-bento__skills-heading">Soft Skills</h4>
+                <ul class="about-bento__skills-list" aria-label="Soft Skills">
+                  <li>Teamwork</li>
+                  <li>Problem Solving</li>
+                  <li>Attention to Detail</li>
+                  <li>Time Management</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Side Cards Wrapper -->
+          <div class="about-bento__side">
+            <!-- Quote Card -->
+            <div class="about-bento__quote">
+              <blockquote class="about-bento__quote-text">
+                <em>"Bridging user needs and business goals through digital solutions."</em>
+              </blockquote>
+            </div>
+
+            <!-- Resume Card -->
+            <a href="assets/documents/resume.pdf" class="about-bento__resume" download
+              aria-label="Download Diandra Anggari's Resume in PDF format">
+              <div class="about-bento__resume-content">
+                <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                <span class="about-bento__resume-text">My Resume</span>
+              </div>
+              <span class="about-bento__resume-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END ABOUT ======================= -->
+
+    <!-- ======================================================= -->
+    <!--                     PROJECTS SECTION                    -->
+    <!-- ======================================================= -->
+    <section id="projects" class="projects" aria-labelledby="projects-heading">
+      <div class="projects__container">
+        <div class="projects__header">
+          <h3 id="projects-heading" class="projects__title">Featured Projects</h3>
+
+          <!-- Tombol geser carousel (ditampilkan oleh script.js bila ada kartu yang bisa digeser) -->
+          <div class="projects__controls" id="projects-controls" hidden>
+            <button type="button" class="carousel-btn" id="projects-prev" aria-label="Previous project"
+              aria-controls="projects-track">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="carousel-btn" id="projects-next" aria-label="Next project"
+              aria-controls="projects-track">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-track" role="region"
+          aria-label="Featured projects (geser untuk melihat project lainnya)" tabindex="0">
+          <!-- Project 1: BatikLens -->
+          <article class="project-card">
+            <figure class="project-card__figure">
+              <img src="assets/images/project-batiklens-hero.jpg"
+                alt="Preview of BatikLens Indonesian batik classification application interface"
+                class="project-card__image">
+            </figure>
+            <div class="project-card__content">
+              <h4 class="project-card__title">BatikLens</h4>
+              <p class="project-card__description">
+                AI-powered web application designed to help users identify Indonesian batik motifs by uploading an
+                image, exploring cultural philosophy and motif origin.
+              </p>
+              <ul class="project-card__tech-list" aria-label="BatikLens technology stack">
+                <li class="project-card__tech-tag">Python</li>
+                <li class="project-card__tech-tag">TensorFlow</li>
+                <li class="project-card__tech-tag">Streamlit</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://batiklensapp-zag23kdprgm4vffzaxfoyp.streamlit.app" class="footer__social-link"
+                  target="_blank" rel="noopener noreferrer" aria-label="Open BatikLens live demo">
+                  <i class="fa fa-link" aria-hidden="true"></i></a>
+                <a href="https://github.com/diandranggari/BatikLensApp" class="footer__social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="View BatikLens source code on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="projects/batiklens.html" class="project-card__link project-card__link--case-study"
+                  aria-label="Read BatikLens case study">Read Case Study</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Project 2: Teman Hebatku -->
+          <article class="project-card">
+            <figure class="project-card__figure">
+              <img src="assets/images/project-temanhebatku-hero.jpg"
+                alt="Preview of Teman Hebatku BodyBuddies Augmented Reality educational book"
+                class="project-card__image">
+            </figure>
+            <div class="project-card__content">
+              <h4 class="project-card__title">Teman Hebatku</h4>
+              <p class="project-card__description">
+                Interactive educational book enhanced with Augmented Reality (AR) technology to help children explore 3D
+                visualizations of human internal organs.
+              </p>
+              <ul class="project-card__tech-list" aria-label="Teman Hebatku technology stack">
+                <li class="project-card__tech-tag">8thWall</li>
+                <li class="project-card__tech-tag">Canva</li>
+                <li class="project-card__tech-tag">AR</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://canva.link/tprn82pdut08xdp" class="footer__social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="View Teman Hebatku design on Canva">
+                  <i class="fa fa-link" aria-hidden="true"></i></a>
+                <a href="projects/teman-hebatku.html" class="project-card__link project-card__link--case-study"
+                  aria-label="Read Teman Hebatku case study">Read Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Griya Raden Saleh -->
+          <article class="project-card">
+            <figure class="project-card__figure">
+              <img src="assets/images/project-griya-hero.jpg"
+                alt="Preview of Griya Raden Saleh boarding house booking management platform"
+                class="project-card__image">
+            </figure>
+            <div class="project-card__content">
+              <h4 class="project-card__title">Griya Raden Saleh</h4>
+              <p class="project-card__description">
+                Web-based boarding house management and booking platform simplifying room exploration, bookings, and
+                centralized administrative payment verification.
+              </p>
+              <ul class="project-card__tech-list" aria-label="Griya Raden Saleh technology stack">
+                <li class="project-card__tech-tag">HTML</li>
+                <li class="project-card__tech-tag">CSS</li>
+                <li class="project-card__tech-tag">GitHub</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://azizzulkarnaen.github.io/website-griyaradensaleh/" class="footer__social-link"
+                  target="_blank" rel="noopener noreferrer" aria-label="Visit the Griya Raden Saleh website">
+                  <i class="fa fa-link" aria-hidden="true"></i></a>
+                <a href="https://github.com/AzizZulkarnaen/website-griyaradensaleh" class="footer__social-link"
+                  target="_blank" rel="noopener noreferrer" aria-label="View Griya Raden Saleh source code on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="projects/griya-raden-saleh.html" class="project-card__link project-card__link--case-study"
+                  aria-label="Read Griya Raden Saleh case study">Read Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Yuk Pilah -->
+          <article class="project-card">
+            <figure class="project-card__figure">
+              <img src="assets/images/project-yuk-pilah-hero.jpg" alt="Preview of Yuk Pilah waste management"
+                class="project-card__image">
+            </figure>
+            <div class="project-card__content">
+              <h4 class="project-card__title">Yuk Pilah</h4>
+              <p class="project-card__description">
+                A website-based waste management platform designed to assist households in managing waste and provide
+                comprehensive information about waste management.
+              </p>
+              <ul class="project-card__tech-list" aria-label="Yuk Pilah technology stack">
+                <li class="project-card__tech-tag">HTML</li>
+                <li class="project-card__tech-tag">CSS</li>
+                <li class="project-card__tech-tag">GitHub</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="https://yukpilah.vercel.app/" class="footer__social-link" target="_blank"
+                  rel="noopener noreferrer" aria-label="Visit the Yuk Pilah website">
+                  <i class="fa fa-link" aria-hidden="true"></i></a>
+                <a href="https://github.com/diandranggari/YukPilah-AnakMamiDian" class="footer__social-link"
+                  target="_blank" rel="noopener noreferrer" aria-label="View Yuk Pilah source code on GitHub">
+                  <i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="projects/yuk-pilah.html" class="project-card__link project-card__link--case-study"
+                  aria-label="Read Yuk Pilah case study">Read Case Study</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END PROJECTS ==================== -->
+
+    <!-- ======================================================= -->
+    <!--                    EXPERIENCE SECTION                   -->
+    <!-- ======================================================= -->
+    <section id="experience" class="experience" aria-labelledby="experience-heading">
+      <div class="experience__container">
+        <div class="experience__header">
+          <h3 id="experience-heading" class="experience__title">Experience</h3>
+        </div>
+
+        <div class="timeline experience__list">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item experience__item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">Academic</span>
+              <div class="timeline-meta experience__item-header">
+                <h4 class="experience__role">Teaching Assistant Odd Period</h4>
+                <span class="timeline-org experience__org">BINUS University</span>
+                <span class="timeline-date experience__year">Sep 2026 - Present</span>
+              </div>
+              <p class="experience__description">
+                Co-instructed 4 laboratory classes (approx. 20 students each), guiding students through SQL practicums
+                using PostgreSQL and network configuration exercises using Cisco Packet Tracer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item experience__item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">Leadership</span>
+              <div class="timeline-meta experience__item-header">
+                <h4 class="experience__role">Freshmen Leader</h4>
+                <span class="timeline-org experience__org">BINUS University</span>
+                <span class="timeline-date experience__year">Jul - Sep 2026</span>
+              </div>
+              <p class="experience__description">
+                Assisted freshmen in adapting to the university environment and provided guidance during their initial
+                campus experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item experience__item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">Academic</span>
+              <div class="timeline-meta experience__item-header">
+                <h4 class="experience__role">Teaching Assistant Even Period</h4>
+                <span class="timeline-org experience__org">BINUS University</span>
+                <span class="timeline-date experience__year">Feb - Jun 2026</span>
+              </div>
+              <p class="experience__description">
+                Co-instructed 5 weekly data structure laboratory classes with co-instructor, providing hands-on guidance
+                and practical instruction in advanced data structure implementation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item experience__item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">Organization</span>
+              <div class="timeline-meta experience__item-header">
+                <h4 class="experience__role">Event Lead for TechnoScape Malang</h4>
+                <span class="timeline-org experience__org">Bina Nusantara Computer Club (BNCC)</span>
+                <span class="timeline-date experience__year">Feb - May 2026</span>
+              </div>
+              <p class="experience__description">
+                Coordinated the Event Division and managed the event rundown for BNCC’s largest annual event, themed
+                around Financial Technology (FinTech), ensuring smooth event execution.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-category">Work</span>
+              <h3>Science Tutor</h3>
+              <div class="timeline-meta">
+                <span class="timeline-org">SPNF SKB Posko Kelurahan Karangbesuki</span>
+                <span class="timeline-date">Aug 2025 – Present</span>
+              </div>
+              <p>Teach weekly science classes to junior high equivalency students (Grades 7–9), adapting teaching
+                methods to accommodate different learning levels and ensure concept comprehension.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END EXPERIENCE ================== -->
+
+    <!-- ======================================================= -->
+    <!--                    TECH STACK SECTION                   -->
+    <!-- ======================================================= -->
+    <section id="techstack" class="techstack" aria-labelledby="techstack-heading">
+      <div class="techstack__container">
+        <div class="techstack__header">
+          <h3 id="techstack-heading" class="techstack__title">Tech Stack</h3>
+          <p class="techstack__subtitle">Tools, technologies, and methods I use to design, build, and test digital
+            solutions.</p>
+        </div>
+
+        <div class="techstack-grid">
+          <article class="techstack-card techstack-card--design">
+            <div class="techstack-card__head">
+              <span class="techstack-card__icon" aria-hidden="true"><i class="fas fa-pen-ruler"></i></span>
+              <h4 class="techstack-card__title">Design</h4>
+            </div>
+            <ul class="techstack-card__list" aria-label="Design">
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-figma-plain colored"
+                  aria-hidden="true"></i><span>Figma</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-palette"
+                  aria-hidden="true"></i><span>Canva</span></li>
+              <li class="techstack-tag"><i
+                  class="techstack-tag__icon techstack-tag__icon--generic fas fa-wand-magic-sparkles"
+                  aria-hidden="true"></i><span>Google Stitch</span></li>
+            </ul>
+          </article>
+
+          <article class="techstack-card techstack-card--dev">
+            <div class="techstack-card__head">
+              <span class="techstack-card__icon" aria-hidden="true"><i class="fas fa-code"></i></span>
+              <h4 class="techstack-card__title">Development</h4>
+            </div>
+            <ul class="techstack-card__list" aria-label="Development">
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-html5-plain colored"
+                  aria-hidden="true"></i><span>HTML</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-css3-plain colored"
+                  aria-hidden="true"></i><span>CSS</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-javascript-plain colored"
+                  aria-hidden="true"></i><span>JavaScript</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-python-plain colored"
+                  aria-hidden="true"></i><span>Python</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-c-plain colored"
+                  aria-hidden="true"></i><span>C</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-bootstrap-plain colored"
+                  aria-hidden="true"></i><span>Bootstrap</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-vscode-plain colored"
+                  aria-hidden="true"></i><span>VS Code</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-laptop-code"
+                  aria-hidden="true"></i><span>Antigravity IDE</span></li>
+            </ul>
+          </article>
+
+          <article class="techstack-card techstack-card--data">
+            <div class="techstack-card__head">
+              <span class="techstack-card__icon" aria-hidden="true"><i class="fas fa-brain"></i></span>
+              <h4 class="techstack-card__title">Data &amp; AI</h4>
+            </div>
+            <ul class="techstack-card__list" aria-label="Data and AI">
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-file-excel"
+                  aria-hidden="true"></i><span>Excel</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-table"
+                  aria-hidden="true"></i><span>Google Sheets</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-flask"
+                  aria-hidden="true"></i><span>Google Colab</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-postgresql-plain colored"
+                  aria-hidden="true"></i><span>PostgreSQL</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-mysql-plain colored"
+                  aria-hidden="true"></i><span>MySQL</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-tensorflow-original colored"
+                  aria-hidden="true"></i><span>TensorFlow</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-keras-original colored"
+                  aria-hidden="true"></i><span>Keras</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-chart-line"
+                  aria-hidden="true"></i><span>Streamlit</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-robot"
+                  aria-hidden="true"></i><span>DeepSeek</span></li>
+            </ul>
+          </article>
+
+          <article class="techstack-card techstack-card--tools">
+            <div class="techstack-card__head">
+              <span class="techstack-card__icon" aria-hidden="true"><i class="fas fa-screwdriver-wrench"></i></span>
+              <h4 class="techstack-card__title">Tools &amp; Platforms</h4>
+            </div>
+            <ul class="techstack-card__list" aria-label="Tools and Platforms">
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-github-original"
+                  aria-hidden="true"></i><span>GitHub</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon devicon-vercel-original"
+                  aria-hidden="true"></i><span>Vercel</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fab fa-google"
+                  aria-hidden="true"></i><span>Google Workspace</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-network-wired"
+                  aria-hidden="true"></i><span>Cisco Packet Tracer</span></li>
+            </ul>
+          </article>
+
+          <article class="techstack-card techstack-card--methods">
+            <div class="techstack-card__head">
+              <span class="techstack-card__icon" aria-hidden="true"><i class="fas fa-diagram-project"></i></span>
+              <h4 class="techstack-card__title">Methods</h4>
+            </div>
+            <ul class="techstack-card__list" aria-label="Methods">
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-arrows-rotate"
+                  aria-hidden="true"></i><span>Scrum</span></li>
+              <li class="techstack-tag"><i
+                  class="techstack-tag__icon techstack-tag__icon--generic fas fa-table-cells-large"
+                  aria-hidden="true"></i><span>BMC</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-table-cells"
+                  aria-hidden="true"></i><span>Feedback Grid</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-vector-square"
+                  aria-hidden="true"></i><span>Prototyping</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-user-check"
+                  aria-hidden="true"></i><span>UAT</span></li>
+              <li class="techstack-tag"><i
+                  class="techstack-tag__icon techstack-tag__icon--generic fas fa-clipboard-list"
+                  aria-hidden="true"></i><span>UEQ</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-cube"
+                  aria-hidden="true"></i><span>Black Box Testing</span></li>
+              <li class="techstack-tag"><i class="techstack-tag__icon techstack-tag__icon--generic fas fa-box-open"
+                  aria-hidden="true"></i><span>White Box Testing</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END TECH STACK ================== -->
+
+    <!-- ======================================================= -->
+    <!--                     CONTACT SECTION                     -->
+    <!-- ======================================================= -->
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2>Open to Opportunities</h2>
+          <p>Have an internship opportunity, project idea, or collaboration in mind? I am always open to meaningful
+            conversations where technology and design can create real value.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- LEFT COLUMN -->
+          <div class="contact-left">
+            <h3>Contact Details</h3>
+            <p class="contact-subtext">Feel free to reach out through any of the channels below.</p>
+
+            <div class="contact-cards">
+              <a href="mailto:hi.diandraanggari@gmail.com" class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-card__text">
+                  <span>EMAIL</span>
+                  <strong>hi.diandraanggari@gmail.com</strong>
+                </div>
+              </a>
+
+              <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-card__text">
+                  <span>LOCATION</span>
+                  <strong>Malang, Indonesia</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://github.com/diandranggari" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/diandra-anggari" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="contact-right">
+            <div class="contact-form-wrapper">
+              <h3>Send a Message</h3>
+              <p>Tell me what you are working on, what you need, or where you see a potential fit.</p>
+
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell me about your inquiry..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Inquiry ↗</button>
+                <small>This opens your email app with the inquiry pre-filled.</small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== END CONTACT ===================== -->
+
+  </main>
+  <!-- ===================== END MAIN CONTENT ================ -->
+
+  <!-- ========================================================= -->
+  <!--                          FOOTER                           -->
+  <!-- ========================================================= -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copyright">
+        &copy; 2026 Diandra Anggari. Built with code and countless Taylor Swift songs.
+      </p>
+
+      <ul class="footer__socials-list" aria-label="Footer social links">
+        <li class="footer__socials-item">
+          <a href="https://www.linkedin.com/in/diandra-anggari" class="footer__social-link" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit LinkedIn Profile">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="https://github.com/diandranggari" class="footer__social-link" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit GitHub Profile">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a href="mailto:hi.diandraanggari@gmail.com" class="footer__social-link" aria-label="Send an email">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- ===================== END FOOTER ====================== -->
+
+</body>
+</html>
